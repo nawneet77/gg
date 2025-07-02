@@ -8,4 +8,4 @@ app.include_router(tools.router, prefix="/mcp")
 app.include_router(ga4.router, prefix="/ga4")
 
 from routes import sessions_sse
-app.include_router(sessions_sse.router)
+app.include_router(sessions_sse.router, prefix="/ga4")
