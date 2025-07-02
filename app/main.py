@@ -9,7 +9,3 @@ app.include_router(ga4.router, prefix="/ga4")
 
 from routes import sessions_sse
 app.include_router(sessions_sse.router)
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=8000)
