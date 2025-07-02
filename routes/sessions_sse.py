@@ -8,7 +8,7 @@ import json
 
 router = APIRouter()
 
-@router.post("/sse") 
+@router.post("/get-sessions-sse") 
 async def mcp_sse(request: Request):
     body = await request.json()
     
